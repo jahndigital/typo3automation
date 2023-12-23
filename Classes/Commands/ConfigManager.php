@@ -1,6 +1,7 @@
 <?php
 
-namespace jahndigital\Classes\Commands;
+namespace jahndigital\Typo3Automation\Classes\Commands;
+
 class ConfigManager
 {
     private static $configFile = 'typo3cli-config.json';

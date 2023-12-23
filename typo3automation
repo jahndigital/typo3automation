@@ -3,9 +3,9 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use jahndigital\Classes\Commands\ControllerCommand;
-use jahndigital\Classes\Commands\ModelCommand;
-use jahndigital\Classes\Commands\RepositoryCommand;
+use jahndigital\Typo3Automation\Classes\Commands\ControllerCommand;
+use jahndigital\Typo3Automation\Classes\Commands\ModelCommand;
+use jahndigital\Typo3Automation\Classes\Commands\RepositoryCommand;
 
 $command = $argv[1] ?? null;
 

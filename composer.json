@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "jahndigital\\Classes\\Commands\\": "src/Classes/Commands"
+      "jahndigital\\Typo3Automation\\": "Classes/"
     }
   },
   "bin": [
