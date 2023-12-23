@@ -18,7 +18,7 @@ class RepositoryCommand
             $namespace = $config['vendor'] . '\\' . $config['package'];
         }
 
-        $repositoryDir = "Classes/Domain/Repository";
+        $repositoryDir = $config['mainDirectory'] . "/Classes/Domain/Repository";
         if (!is_dir($repositoryDir)) {
             mkdir($repositoryDir, 0777, true);
         }

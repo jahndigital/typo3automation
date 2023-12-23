@@ -18,7 +18,8 @@ class ModelCommand
             $namespace = $config['vendor'] . '\\' . $config['package'];
         }
 
-        $modelDir = "Classes/Domain/Model";
+
+        $modelDir = $config['mainDirectory'] . "/Classes/Domain/Model";
         if (!is_dir($modelDir)) {
             mkdir($modelDir, 0777, true);
         }

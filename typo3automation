@@ -8,16 +8,21 @@ use jahndigital\Typo3Automation\Commands\ModelCommand;
 use jahndigital\Typo3Automation\Commands\RepositoryCommand;
 
 $command = $argv[1] ?? null;
+$mainDirectory = $argv[2] ?? null;
 
+if (!$mainDirectory) {
+    echo "Main directory is required.\n";
+    exit(1);
+}
 switch ($command) {
     case 'make:model':
-        ModelCommand::handle($argv);
+        ModelCommand::handle($argv, $mainDirectory);
         break;
     case 'make:controller':
-        ControllerCommand::handle($argv);
+        ControllerCommand::handle($argv, $mainDirectory);
         break;
     case 'make:repository':
-        RepositoryCommand::handle($argv);
+        RepositoryCommand::handle($argv, $mainDirectory);
         break;
     default:
         echo "Invalid command\n";

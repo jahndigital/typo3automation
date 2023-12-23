@@ -4,7 +4,7 @@ namespace jahndigital\Typo3Automation\Commands;
 
 class ControllerCommand
 {
-    public static function handle($args): void
+    public static function handle($args,): void
     {
         $controllerName = $args[2] ?? null;
         if (!$controllerName) {
@@ -18,7 +18,7 @@ class ControllerCommand
             $namespace = $config['vendor'] . '\\' . $config['package'];
         }
 
-        $controllerDir = "Classes/Controller";
+        $controllerDir = $config['mainDirectory'] . "/Classes/Controller";
         if (!is_dir($controllerDir)) {
             mkdir($controllerDir, 0777, true);
         }
