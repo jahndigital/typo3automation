@@ -1,15 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-if (file_exists($a = __DIR__ . '/vendor/autoload.php')) {
-    require $a;
-} elseif (file_exists($a = getenv('COMPOSER_HOME') . '/vendor/autoload.php')) {
-    require $a;
-} else {
-    // Handle the error if autoload.php is not found
-    echo "Autoload file not found";
-    exit(1);
-}
+require __DIR__.'/vendor/autoload.php';
 
 use jahndigital\Classes\Commands\ControllerCommand;
 use jahndigital\Classes\Commands\ModelCommand;
