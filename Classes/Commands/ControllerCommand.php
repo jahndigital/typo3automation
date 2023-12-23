@@ -1,6 +1,6 @@
 <?php
 
-namespace jahndigital\Typo3Automation\Classes\Commands;
+namespace jahndigital\Typo3Automation\Commands;
 
 class ControllerCommand
 {

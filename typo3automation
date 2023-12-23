@@ -3,9 +3,9 @@
 
 require ($GLOBALS['_composer_autoload_path'] ?? __DIR__ . '/../../autoload.php');
 
-use jahndigital\Typo3Automation\Classes\Commands\ControllerCommand;
-use jahndigital\Typo3Automation\Classes\Commands\ModelCommand;
-use jahndigital\Typo3Automation\Classes\Commands\RepositoryCommand;
+use jahndigital\Typo3Automation\Commands\ControllerCommand;
+use jahndigital\Typo3Automation\Commands\ModelCommand;
+use jahndigital\Typo3Automation\Commands\RepositoryCommand;
 
 $command = $argv[1] ?? null;
 
