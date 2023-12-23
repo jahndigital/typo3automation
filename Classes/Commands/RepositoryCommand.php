@@ -35,7 +35,7 @@ class RepositoryCommand
             . "    {\n"
             . "         \$this->defaultQuerySettings = GeneralUtility::makeInstance(Typo3QuerySettings::class);\n"
             . "         \$this->defaultQuerySettings->setRespectStoragePage(false);\n"
-            . "    }\n\n"
+            . "    }\n"
             . "}\n";
 
         file_put_contents("$repositoryDir/$repositoryName.php", $template);
