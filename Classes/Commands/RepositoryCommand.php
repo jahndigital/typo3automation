@@ -26,7 +26,17 @@ class RepositoryCommand
         $template = "<?php\n\n"
             . "declare(strict_types=1);\n\n"
             . "namespace $namespace\Domain\Repository;\n\n"
-            . "class $repositoryName extends AbstractRepository {}\n";
+            . "use TYPO3\CMS\Core\Utility\GeneralUtility;\n\n"
+            . "use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;\n\n"
+            . "use TYPO3\CMS\Extbase\Persistence\Repository;\n\n"
+            . "class $repositoryName extends Repository\n"
+            . "{\n"
+            . "     public function initializeObject(): void\n"
+            . "    {\n"
+            . "         \$this->defaultQuerySettings = GeneralUtility::makeInstance(Typo3QuerySettings::class);\n"
+            . "         \$this->defaultQuerySettings->setRespectStoragePage(false);\n"
+            . "    }\n\n"
+            . "}\n";
 
         file_put_contents("$repositoryDir/$repositoryName.php", $template);
         echo "$repositoryName repository created in $repositoryDir.\n";

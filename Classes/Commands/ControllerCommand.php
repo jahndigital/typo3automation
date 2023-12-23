@@ -27,6 +27,7 @@ class ControllerCommand
             . "declare(strict_types=1);\n\n"
             . "namespace $namespace\Controller;\n\n"
             . "use Psr\Http\Message\ResponseInterface;\n\n"
+            . "use TYPO3\CMS\Install\Controller\AbstractController;\n\n"
             . "class $controllerName extends AbstractController\n"
             . "{\n"
             . "    public function listAction(): ResponseInterface\n"
