@@ -1,7 +1,7 @@
 {
   "name": "jahndigital/typo3automation",
   "description": "A small CLI tool for TYPO3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "library",
   "require": {
     "php": "^8.0|^8.2"
