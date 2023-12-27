@@ -16,7 +16,7 @@ This TYPO3 CLI Tool is designed to streamline the development process in TYPO3 b
 Clone the repository or download the source code to your local machine. Ensure you have PHP installed on your system.
 
 ```bash
-git clone https://your-repository-url.git
+git clone https://github.com/jahndigital/typo3automation.git
 cd your-cli-tool-directory
 ```
 
