@@ -17,7 +17,6 @@ Clone the repository or download the source code to your local machine. Ensure y
 
 ```bash
 git clone https://github.com/jahndigital/typo3automation.git
-cd your-cli-tool-directory
 ```
 
 ## Run Composer to install dependencies:
